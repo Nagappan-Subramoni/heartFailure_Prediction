@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import joblib
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, f1_score
 from xgboost import XGBClassifier
@@ -76,6 +75,6 @@ def save_model(model, file_path):
     joblib.dump(model, file_path)
     print(f"Model saved to {file_path}")
 
-save_file_name = "xgboost-model.pkl"
+save_file_name = "api/app/xgboost-model.pkl"
 
 joblib.dump(model, save_file_name)
