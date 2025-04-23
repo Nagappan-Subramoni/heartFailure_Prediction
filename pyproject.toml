@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HeartFailerDetection"
+version = "0.1.1"
+description = "Heart Failure DEtection"
+authors = [
+    { name = "Nagappan Subramoni", email = "nagappans@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pytest",
+    "scikit-learn",
+    "joblib",
+    "xgboost"
+]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[tool.setuptools]
+include-package-data = true
