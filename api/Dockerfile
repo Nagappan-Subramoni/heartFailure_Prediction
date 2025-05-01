@@ -25,5 +25,8 @@ RUN python train.py
 # Set working directory to API app
 WORKDIR /app/api/app
 
+EXPOSE 8000
+EXPOSE 8001
+
 # Run the FastAPI app
 CMD ["python", "app.py"]
